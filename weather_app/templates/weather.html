@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block contents %}
+ <div class="container  mt-5">
+ 	<div class="row" style="height: 500px;">
+ <div class="col-md-4">
+ 		<div class="w">
+ 			<h3>Dar es salaam</h3>
+ 			<p>{{ weather.temperature }}&deg; C</p>
+ 			<h4>{{weather.description|capfirst }}</h4>
+ 			<img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="Image">
+ 			<div class="row">
+ 				<div class="col-md-4 ">
+ 					<div class="wind">
+ 					 <i class="fa fa-wind" ></i>
+ 					<h5>{{ weather.wind }}km/h</h5>
+ 					<h4>Wind</h4>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-4">
+ 					<div class="wind">
+ 					<i class="fa fa-fire"></i>
+ 					<h5>{{ weather.humidity }}%</h5>
+ 					<h4>Humidity</h4>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-4">
+ 					<div class="wind">
+ 					 <i class="fa fa-tachometer-alt" ></i>
+ 					<h5>{{ weather.pressure }} hpa</h5>
+ 					<h4>Presure</h4>
+ 					</div>
+ 				</div>
+
+ 			</div>	
+ 		</div>
+ 	</div>
+ 	<div class="col-md-4">
+ 		<div class="w">
+ 			<h3>Arusha</h3>
+ 			<p>{{ weather.temperature1 }}&deg; C</p>
+ 			<h4>{{weather.description1|capfirst }}</h4>
+                <img src="http://openweathermap.org/img/w/{{ weather.icon1 }}.png" alt="Image">
+ 			<div class="row">
+ 				<div class="col-md-4 ">
+ 					<div class="wind">
+ 					 <i class="fa fa-wind" ></i>
+ 					<h5>{{ weather.wind1 }} km/h</h5>
+ 					<h4>Wind</h4>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-4">
+ 					<div class="wind">
+ 					<i class="fa fa-fire"></i>
+ 					<h5>{{ weather.humidity1 }}%</h5>
+ 					<h4>Humidity</h4>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-4">
+ 					<div class="wind">
+ 					 <i class="fa fa-tachometer-alt" ></i>
+ 					<h5>{{ weather.pressure1 }} hpa</h5>
+ 					<h4>Presure</h4>
+ 					</div>
+ 				</div>
+
+ 			</div>	
+ 		</div>
+ 	</div>
+ 	<div class="col-md-4">
+ 		<div class="w">
+ 			<h3>Mwanza</h3>
+ 			<p>{{ weather.temperature2 }}&deg; C</p>
+ 			<h4>{{weather.description2|capfirst}}</h4>
+ 			<img src="http://openweathermap.org/img/w/{{ weather.icon2 }}.png" alt="Image">
+ 			<div class="row">
+ 				<div class="col-md-4 ">
+ 					<div class="wind">
+ 					 <i class="fa fa-wind" ></i>
+ 					<h5>{{ weather.wind2 }} km/h</h5>
+ 					<h4>Wind</h4>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-4">
+ 					<div class="wind">
+ 					<i class="fa fa-fire"></i>
+ 					<h5>{{ weather.humidity2 }} %</h5>
+ 					<h4>Humidity</h4>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-4">
+ 					<div class="wind">
+ 					 <i class="fa fa-tachometer-alt" ></i>
+ 					<h5>{{ weather.pressure2 }} hpa</h5>
+ 					<h4>Presure</h4>
+ 					</div>
+ 				</div>
+
+ 			</div>	
+ 		</div>
+ 	</div>
+ </div>
+ </div>
+{% endblock contents %}
